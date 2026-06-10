@@ -8,7 +8,7 @@ A Minecraft mod for **Minecraft 1.21.11** + **NeoForge 21.11.42** that makes (al
 2. Install **NeoForge 21.11.42**:
    - Download the installer from the official site: <https://projects.neoforged.net/neoforged/neoforge> (pick version 21.11.42, "Installer"), or use this direct link: <https://maven.neoforged.net/releases/net/neoforged/neoforge/21.11.42/neoforge-21.11.42-installer.jar>
    - Run the installer, choose **Install client**, and point it at your `.minecraft` folder (the default is correct for most people).
-3. Put `boomboom-1.0.0.jar` into your mods folder: press `Win+R`, enter `%APPDATA%\.minecraft\mods`, drop the jar there.
+3. Download `boomboom-1.0.0.jar` from the [latest release](https://github.com/ivkoneli/BoomBoom/releases/latest) and put it into your mods folder: press `Win+R`, enter `%APPDATA%\.minecraft\mods`, drop the jar there.
 4. Launch the game with the **`neoforge-21.11.42`** profile/version selected in your launcher (works with the official launcher and TLauncher alike).
 
 Mob explosions respect the `mobGriefing` gamerule if you want exploding mobs without losing terrain: `/gamerule mobGriefing false`.
