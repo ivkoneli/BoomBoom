@@ -8,13 +8,17 @@ A Minecraft mod for **Minecraft 1.21.11** using **NeoForge 21.11.42**.
 
 ## Run / Build
 
-```bash
+On Windows (PowerShell/cmd):
+
+```powershell
 # Launch a dev instance of Minecraft with the mod loaded
-./gradlew runClient
+.\gradlew.bat runClient
 
 # Build the release jar (output: build/libs/boomboom-<version>.jar)
-./gradlew build
+.\gradlew.bat build
 ```
+
+On Linux/macOS use `./gradlew` instead of `.\gradlew.bat`.
 
 To play with the mod normally, drop the built jar into your `.minecraft/mods` folder and launch the `neoforge-21.11.42` version from your launcher.
 
