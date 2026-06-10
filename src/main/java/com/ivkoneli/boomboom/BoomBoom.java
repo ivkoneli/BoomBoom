@@ -23,7 +23,8 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraft.world.entity.animal.chicken.Chicken;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.monster.Creeper;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
@@ -110,11 +111,12 @@ public class BoomBoom {
         }
     }
 
-    // Inject the creeper-style explosion AI into chickens as they spawn or load
+    // Inject the creeper-style explosion AI into every mob as it spawns or loads.
+    // Creepers are skipped: they already explode on their own.
     @SubscribeEvent
     public void onEntityJoinLevel(EntityJoinLevelEvent event) {
-        if (!event.getLevel().isClientSide() && event.getEntity() instanceof Chicken chicken) {
-            chicken.goalSelector.addGoal(1, new ExplodeLikeCreeperGoal(chicken));
+        if (!event.getLevel().isClientSide() && event.getEntity() instanceof Mob mob && !(mob instanceof Creeper)) {
+            mob.goalSelector.addGoal(1, new ExplodeLikeCreeperGoal(mob));
         }
     }
 
