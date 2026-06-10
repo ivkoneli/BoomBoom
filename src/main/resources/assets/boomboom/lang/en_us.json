@@ -1,0 +1,13 @@
+{
+  "itemGroup.boomboom": "BoomBoom Tab",
+  "block.boomboom.example_block": "Example Block",
+  "item.boomboom.example_item": "Example Item",
+
+  "boomboom.configuration.title": "BoomBoom Configs",
+  "boomboom.configuration.section.boomboom.common.toml": "BoomBoom Configs",
+  "boomboom.configuration.section.boomboom.common.toml.title": "BoomBoom Configs",
+  "boomboom.configuration.items": "Item List",
+  "boomboom.configuration.logDirtBlock": "Log Dirt Block",
+  "boomboom.configuration.magicNumberIntroduction": "Magic Number Text",
+  "boomboom.configuration.magicNumber": "Magic Number"
+}
